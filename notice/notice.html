@@ -17,12 +17,92 @@
     <meta property="twitter:description"        content="굿즈 뼈대" />
 
     <title>Document</title>
-    <link href="./css/index.css" rel="stylesheet">
+    <link href="../css/notice.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-main">
+            <div class="header-left">
+                <a href="../index.html"><img src="/img/god.jpg" alt="대충 로고"></a>
+            </div>
+            <div class="header-middle">
+                <div class="header-3rd">
+                    <div class="header-login">
+                        <a href="">| 로그인</a>
+                        <a href="">| 회원가입</a>
+                        <a href="">| 아이디 및 비밀번호찾기</a>
+                        <a href="">| 장바구니</a>
+                        <a href="">| 주문조회 |</a>
+                    </div>
+                </div>
+                <div class="header-2rd">
+                    <form class="header-sch">
+                        <input type="text" name="schBar" placeholder="검색" autocomplete="off">
+                        <input type="submit" name="schSubmit" value="검색" >
+                    </form>
+                </div>
+                <div class="header-1st">
+                    <div class="header-ctgr">
+                        <div>
+                            <a href="./notice/notice.html">공지사항</a>
+                        </div>
+                        <div>
+                            <a href="./new.html">New</a>
+                        </div>
+                        <div>
+                            <a href="">예약 구매</a>
+                        </div>
+                        <div>
+                            <a href="./artist/artist.html">Artist</a>
+                        </div>
+                        <div>
+                            <a href="">CD & DVD</a>
+                        </div>
+                        <div>
+                            <a href="">MD</a>
+                        </div>
+                        <div>
+                            <a href="">고객센터</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>자유게시판 목록</h2>
+        <table width="700" border="0" cellpadding="0" cellspacing="0" id="list">
+            <tr height="30">
+                <th width="7%">번호</th>
+                <th width="15%">분류</th>
+                <th width="*%">제목</th>
+                <th width="15%">작성자</th>
+                <th width="10%">작성일</th>
+                <th width="7%">조회</th>
+            </tr>
+        </table>
+    </main>
+    <footer class="footer">
+        <article>
+            <div>
+                <h3>상담 전화</h3>
+                <p>02)000-0000</p>
+                <p>상담시간 9:00 ~ 18:00</p>
+                <p>점심시간 12:00 ~ 13:00</p>
+                <p>토·일, 공유일 휴무 </p>
+                <a href="mailto:아이디@이메일.com">아이디@이메일.com</a>
+            </div>
+            <div>
+                <p>주소</p>
+                <p>서울특별시 어딘가</p>
+            </div>
+            <span>
+                <p>Copyright ⓒ 2023 GoodsSale Co. Ltd. All rights reserved.</p>
+            </span>
+        </article>
+    </footer>
 </body>
 </html>
