@@ -19,8 +19,66 @@
     <title>Document</title>
     <link href="./css/index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+/>
+<!-- Link Swiper's CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<style>
+    html,
+    body {
+    position: relative;
+    height: 100%;
+    }
+
+    body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    }
+
+    .swiper {
+    width: 100%;
+    height: 100%;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+      /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    }
+</style>
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-main">
@@ -46,9 +104,6 @@
                 <div class="header-1st">
                     <div class="header-ctgr">
                         <div>
-                            <a href="./notice/notice.html">공지사항</a>
-                        </div>
-                        <div>
                             <a href="./new.html">New</a>
                         </div>
                         <div>
@@ -58,10 +113,10 @@
                             <a href="./artist/artist.html">Artist</a>
                         </div>
                         <div>
-                            <a href="">CD & DVD</a>
+                            <a href="./">상품</a>
                         </div>
                         <div>
-                            <a href="">MD</a>
+                            <a href="./">이벤트</a>
                         </div>
                         <div>
                             <a href="">고객센터</a>
@@ -77,9 +132,42 @@
 
     <main class="main">
         <article class="Content-1">
-            <div>
-                <h2>Content-1</h2>
-            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/뉴진스.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/블랙핑크.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/세븐틴.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/잇지.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/태연.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/아이브.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/스트레이키즈.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                loop: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                });
+            </script>
         </article>
         <article class="Content-2">
             <div>
