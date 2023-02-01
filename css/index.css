@@ -4,11 +4,11 @@ body{font-family: "Noto Sans KR", Sans-Serif;}
 
 .main{max-width: 100%; margin: 0 auto;}
 
-.Content-1{width:100%;height: 50em; background-color: blanchedalmond;}
+.Content-1{width:100%;height: 50em; background-color:white}
 .Content-1 div { max-width: 1200px; margin: 0 auto;}
 .Content-1 div h2 { }
 
-.Content-2{width:100%;height: 50em; background-color:white;}
+.Content-2{width:100%;height: 50em; background-color:blanchedalmond;}
 .Content-2 div { max-width: 1200px; margin: 0 auto;}
 .Content-2 div h2 { }
 

@@ -18,19 +18,19 @@ h1,h2,h3,h4,h5,h6,p,figure{ margin:0; }
 img{vertical-align: top;}
 a{text-decoration: none;}
 
-.header {margin: 0 auto;  background-color: #e1e1e1e1; }
+.header {margin: 0 auto;}
 .header-main { display: flex; max-width: 1200px; margin: 0 auto;}
 .header-left {width: 12em;}
-.header-left img{width: 10em;}
+.header-left img{width: 15em; height: 12em;}
 .header-middle {
-    display: flex; flex-direction: column; width: 100%;
+    display: flex; flex-direction: column; width: 100%; margin: 5px;
     justify-content: space-between;
 
 }
 .header-3rd { display: flex; justify-content: right;}
-.header-login { width:45em; font-size: 0.5em; justify-content: space-between;}
+.header-login a { padding:5px; width:45em; font-size: 0.5em; justify-content: space-between; border: 1px solid #000;}
 .header-2rd { display: flex; justify-content: center;}
-.header-sch {width: 30em; display: flex; justify-content: space-between;}
+.header-sch {width: 30em; display: flex; justify-content: space-between; margin: 50px;}
 .header-sch input:nth-of-type(1){ width: 35em;}
 .header-1st {
 
